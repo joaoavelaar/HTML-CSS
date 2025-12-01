@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* 
+    Em HTML é id = em CSS é #
+    Em HTML é class = em CSS é .
+*/
+body {
+    background-color: rgb(205, 230, 221);
+    font-family: 'Ubuntu';
+    text-align: justify;
+}
+
+h1 {
+    color: rgb(56, 112, 94);
+        border-radius: 0.1em;
+}
+
+#principal {
+    color: white;
+    text-align: center;
+    background-color: rgb(56, 112, 94);
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(79, 165, 136);
+}
+
+.basico {
+    color: rgb(79, 165, 136);
+    font-weight: bold;
+}
+
+.intermediário {
+    color: rgb(160, 139, 20);
+    font-weight: bold;
+
+}
+
+.Avançado {
+    color: rgb(189, 48, 48);
+    font-weight: bold;
+}
+
+.destaque {
+    background-color: rgba(160, 201, 184, 0.781);
+    border-radius: 0.1em;
+}

@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+    text-align: right;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  position: relative;
+  padding: 10px 0;
+}
+
+/* Molduras laterais */
+.navbar-border {
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  top: 0;
+  left: 0;
+}
+
+.navbar-border.right {
+  border-left: none;
+  border-top: none;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+}
+
+/* Linhas superior e inferior */
+.nav-list a::before,
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #ffcc00;
+  transition: all 0.3s ease;
+}
+
+.nav-list a::before {
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.nav-list a::after {
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* Hover animado */
+.nav-list a:hover::before,
+.nav-list a:hover::after {
+  width: 100%;
+}
+
+.nav-list a:hover {
+  color: #c7b054;
+}
+
+/* Estado ativo (centralizado e destacado) */
+.nav-list a.active {
+  background-color: #161614;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+.nav-list a.active::before,
+.nav-list a.active::after {
+  width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  .nav-list {
+    gap: 2rem;
+  }
+
+  .nav-list a {
+    font-size: 0.9rem;
+  }
+}
